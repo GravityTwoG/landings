@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+div.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+section.intro {
+  background-color: pink;
+  min-height: 100vh;
+}
+
+header.main-header {
+  padding: 8px 0 16px;
+  text-align: center;
+  color: #785122;
+}
+
+ul.landings-list {
+  padding: 12px 8px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+  list-style: none;
+  background-color: #e4c8e4;
+}
+
+li.landings-list__item {
+  margin: 12px 0;
+  font-size: 18px;
+}
+
+li.landings-list__item > a {
+  color: #000;
+}

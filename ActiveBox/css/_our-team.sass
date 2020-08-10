@@ -1,0 +1,51 @@
+.our-team
+  padding: 100px 0
+
+  .our-team__inner
+    display: flex
+    flex-wrap: wrap
+
+  .employee
+    width: 25%
+    padding: 15px
+
+    &__photo img
+      width: 100%
+
+    &__name
+      margin: 30px 0px 12px
+      font-size: 22px
+
+    &__prof
+      text-transform: uppercase
+      font-size: 13px
+      color: $accent
+
+    &__desc
+      margin: 30px 0px
+      font-size: 14px
+      color: $gray
+
+    &__socials
+      display: flex
+      align-items: center
+
+      .social-icon
+        margin-right: 4px
+
+  @media screen and ( max-width: $laptop )
+    .employee
+      padding: 5px 8px
+
+      &__name
+        margin: 20px 0 10px
+      &__desc
+        margin: 20px 0
+  @media screen and ( max-width: $tablet )
+    padding: 55px 0
+
+    .employee
+      width: 50%
+  @media screen and ( max-width: $phone-sm )
+    .employee
+      width: 100%

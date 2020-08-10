@@ -1,0 +1,46 @@
+.works
+  .projects__cont
+    display: flex
+    flex-wrap: wrap
+
+  .project
+    width: calc( 25% - 1px )
+    margin: 0px 1px 1px 0px
+    position: relative
+    z-index: 1
+
+    img
+      width: 100%
+      height: 100%
+
+    &__info
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 2
+      background-color: $accent-darker
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      font-size: 14px
+      color: #fff;
+
+      opacity: 0
+      transition: opacity .3s linear
+
+      &:hover
+        opacity: .9
+
+      .project__title
+        padding: 5px
+        font-weight: 700
+
+  @media screen and ( max-width: $tablet )
+    .project
+      width: calc(50% - 1px)
+  @media screen and ( max-width: $phone-sm )
+    .project
+      width: calc(100% - 1px)

@@ -1,0 +1,69 @@
+*,
+*:before,
+*:after
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+body
+  font-family: Raleway;
+  font-weight: 400
+  font-size: 16px
+
+section
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+
+.container
+  margin: 0px auto
+  padding: 0px 15px
+  max-width: 1200px
+  width: 100%
+
+.btn
+  padding: 18px 45px 16px
+  display: inline-block
+  background-color: $accent
+  border-radius: 2px
+  text-transform: uppercase
+  text-decoration: none
+  font-size: 13px
+  font-weight: 600
+  color: #fff
+  cursor: pointer
+  transition: background-color .2s
+
+  &:hover
+    background-color: $accent-darker
+
+
+.social-icon
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 40px
+  min-width: 40px
+  height: 40px
+  border: 1px solid rgb(232, 236, 238)
+
+
+.burger-menu
+  display: block
+  padding: 15px 10px
+  height: 45px
+  width: 45px
+  outline: none
+  cursor: pointer
+
+  & div
+    background-color: $gray
+    width: 100%
+    height: 2px
+    margin-top: 5px
+    pointer-events: none
+
+    &:first-child
+      margin-top: 0
+
+

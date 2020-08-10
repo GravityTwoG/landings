@@ -1,0 +1,75 @@
+.testimonials
+  position: relative
+  overflow: hidden
+  .slick-list
+    max-height: 100%
+  .testimonial
+    margin: auto
+    display: flex
+    flex-wrap: wrap
+    align-items: center !important
+    outline: none
+    max-height: 100%
+    &__img
+      max-width: 48%
+      img
+        max-width: 100%
+        max-height: 370px
+    .testimonial__desc
+      width: 52%
+      padding: 30px 80px 100px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: flex-start
+      color: #fff
+
+      .testimonial__text
+        margin-bottom: 50px
+        font-family: serif
+        font-size: 36px
+        line-height: 42px
+        font-style: italic
+
+      .testimonial__author
+        text-transform: uppercase
+        font-size: 13px
+        font-weight: 700
+
+  ul.slick-dots
+    position: absolute
+    bottom: 15px
+    right: 25%
+    width: auto
+
+    li
+      width: auto
+      height: auto
+    li button
+      width: 8px
+      height: 8px
+      border-radius: 50%
+      background-color: $gray
+      opacity: 1
+      &:before
+        content: ''
+        display: none
+
+    li.slick-active button
+      background-color: #fff
+  @media screen and ( max-width: $laptop )
+    .testimonial
+      .testimonial__img
+        width: 100%
+        max-width: 100%
+        img
+          width: 100%
+          max-height: none
+
+      .testimonial__desc
+        width: 100%
+        padding: 30px 40px
+  @media screen and ( max-width: $phone )
+    .testimonial
+      .testimonial__desc
+        padding: 32px 10px
