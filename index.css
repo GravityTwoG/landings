@@ -15,8 +15,17 @@ div.container {
 }
 
 section.intro {
-  background-color: pink;
-  min-height: 100vh;
+  background: linear-gradient(#e79daa, #bb4dc8);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.intro__inner {
+  flex: 1;
+  max-width: 700px;
 }
 
 header.main-header {
@@ -28,9 +37,10 @@ header.main-header {
 ul.landings-list {
   padding: 12px 8px;
   border-radius: 6px;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 20px rgb(196, 79, 210, 0.4);
   list-style: none;
   background-color: #e4c8e4;
+  flex: 1;
 }
 
 li.landings-list__item {
